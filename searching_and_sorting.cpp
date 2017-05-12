@@ -12,13 +12,15 @@ int main()
 	cout << "How big do you want the array?" << endl;
 	// Store the size of the array in sz
 	cin >> size;
+	// Kitty cat proof user input
 	
 	// Array size, declare
 	int array[size];
 	// Populate array with random numbers
+	
 	srand( ( time(0)));
 	{
-		for(int i=0; i<size; i++)
+		for(int i=0; i<size; i++) 
 		{
 			cin >> array[i];
 			if (array[i]>=10)
@@ -35,7 +37,7 @@ int main()
 		cout << "Did not find " << target << endl;
 }
 
-// Search the displayList array for contents
+// Search the displayList array for contents, Binary Search
 int displayList(int array[], int sz, int target)
 {
 	for(int i=0;i<sz;i++)
@@ -45,3 +47,18 @@ int displayList(int array[], int sz, int target)
 	return -1;
 }
 
+// Bubble sort the elements from largest to smallest
+void sort
+{
+	for(int i=0; i <size; i++)
+		for(int j=1; j<size; j++)
+		{
+			if (array[i-1] < array[j])
+			{
+				int temp= = a[i];
+				array[i] = a[j];
+				array[j] = temp;
+			}
+				swap (array[i] a[j]);
+		}
+}
